@@ -40,3 +40,9 @@ npm-debug.log*
 
 # .terraform will contain large, platform-specific binaries
 .terraform
+
+# DevSpaces
+.stversions
+.stignore
+.stfolder
+devspaces/buildspec.yml
