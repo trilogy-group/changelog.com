@@ -1,0 +1,27 @@
+--- # devspaces.yml
+name: changelog
+description:  Development environment for changelog.com project
+
+# If you want to use a different Dockerfile for your DevSpace, provide the path
+# here.
+docker-file: Dockerfile
+
+# If you need additional files when building your Dockerfile, such as some
+# application binaries that your Dockerfile references, list the glob paths to
+# include here. They are relative to this devspaces.yml file.
+docker-build-includes: |
+  **/*
+
+ports:
+  - protocol: http
+    port-number: 4000
+    description: Changelog port
+  - protocol: tcp
+    port-number: 5432
+    description: PostgreSQL port
+
+sync-ignore: |
+  .git
+  .idea
+  .DS_Store
+  .data
