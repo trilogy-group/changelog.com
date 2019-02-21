@@ -46,3 +46,4 @@ npm-debug.log*
 .stignore
 .stfolder
 devspaces/buildspec.yml
+config/devspaces.exs
