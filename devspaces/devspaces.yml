@@ -25,3 +25,8 @@ sync-ignore: |
   .idea
   .DS_Store
   .data
+  /_build
+  /db
+  /deps
+  /*.ez
+  /assets/node_modules
